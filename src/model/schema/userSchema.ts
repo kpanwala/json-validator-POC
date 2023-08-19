@@ -1,0 +1,37 @@
+export const userSchema={
+    "required":["data"],
+    "properties":{
+        "data":{
+            "type":"object",
+            "required":["id","email"],
+            "properties":{
+                "id":{
+                    "type":"string"
+                },
+                "email":{
+                    "type":"string"
+                },
+                "first_name":{
+                    "type":"string"
+                },
+                "last_name":{
+                    "type":"string"
+                },
+                "avatar":{
+                    "type":"string"
+                }
+            }
+        },
+        "support":{
+            "type":"object",
+            "properties":{
+                "url":{
+                    "type":"string"
+                },
+                "text":{
+                    "type":"string"
+                }
+            }
+        }
+    }
+}
